@@ -3,6 +3,13 @@ name: ai_edge
 description: 评估任务的技术可行性、当前执行能力与完整交付路径。用户明确要求评估可行性、判断边界、排雷或 /feasibility，或实施前存在会改变路线与投入决策的关键未知项时使用。覆盖封闭产物改造与存在未知约束的跨环境交付；普通开发、成熟打包和概念问答不因工作量大或出现“能做吗”而自动触发。
 metadata:
   version: "3.0.0"
+  author: "hyl320"
+  tags:
+    - feasibility
+    - triage
+    - boundary-check
+    - reverse-engineering
+    - agent-skill
 ---
 
 # ai_edge
