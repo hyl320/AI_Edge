@@ -7,6 +7,7 @@
     <a href="#english">English</a> · <a href="#zh-cn">简体中文</a>
   </p>
   <p align="center">
+    <a href="https://www.npmjs.com/package/@hyl320/ai-edge"><img src="https://img.shields.io/npm/v/@hyl320/ai-edge.svg?color=cb3837" alt="npm version"></a>
     <a href="https://github.com/hyl320/AI_Edge/releases/tag/v3.0.0"><img src="https://img.shields.io/badge/Release-v3.0.0-blue.svg" alt="Release"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
     <img src="https://img.shields.io/badge/Platform-Antigravity%20%7C%20Claude%20Code%20%7C%20Cursor%20%7C%20Agents-orange.svg" alt="Platform">
