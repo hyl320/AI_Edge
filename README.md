@@ -179,11 +179,21 @@ flowchart TD
 
 ### 1. 安装到各类 Agent 工具
 
-本仓库遵循通用 Agent Skill 规范，可直接集成进各种主流 AI 编程环境：
+本仓库遵循通用 Agent Skill 规范，支持 npx 一键自动部署或 Git Clone：
 
-#### 安装到通用环境（Antigravity / Claude Code / Codex / Agents）：
+#### 方式一：npx 一键安装（推荐）
+自动识别并将技能同步分发至全局 (`~`) 以及当前项目的 `.agents`、`.codex`、`.claude`、`.cline` 目录：
 ```bash
-# 全局安装（推荐）：
+# 装进当前目录及全局：
+npx @hyl320/ai-edge
+
+# 或装进指定项目：
+npx @hyl320/ai-edge /path/to/your-project
+```
+
+#### 方式二：Git Clone 手动安装
+```bash
+# 全局安装：
 git clone https://github.com/hyl320/AI_Edge.git ~/.agents/skills/ai_edge
 
 # 或仅在当前项目工程内安装：
@@ -215,6 +225,8 @@ cp -r AI_Edge ~/.gemini/antigravity/skills/ai_edge
 
 ```text
 AI_Edge/
+├── cli.js                   # npx 跨 Agent 一键安装器
+├── package.json             # npm 工程配置
 ├── SKILL.md                 # 核心技能定义与全流程执行协议（System Prompt）
 ├── references/              # 排雷参考指引与历史典型案例
 │   └── kof97-rom.md         # 街机 ROM 改造与封闭产物排雷实战案例
@@ -235,6 +247,22 @@ LLM-driven coding agents frequently fail when tackling non-standard, closed-bina
 
 **AI_Edge** enforces an empirical engineering gate:
 > *"Gather route-deciding evidence before heavy investment; report exact verified boundaries upon delivery. Avoid reckless commitments and premature denials."*
+
+### Installation
+
+**Via npx (recommended):**
+```bash
+# Installs into global (~/) and project-level (.agents, .codex, .claude, .cline)
+npx @hyl320/ai-edge
+
+# Or specify a target project directory:
+npx @hyl320/ai-edge /path/to/your-project
+```
+
+**Via Git Clone:**
+```bash
+git clone https://github.com/hyl320/AI_Edge.git ~/.agents/skills/ai_edge
+```
 
 ### Key Features
 - **5-Stage Full-Link Matrix**: Triage across *Inputs & Modifications*, *Build & Packaging*, *Runtime Environment*, *Validation & Loading*, and *User Acceptance*.

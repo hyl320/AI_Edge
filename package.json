@@ -1,0 +1,35 @@
+{
+  "name": "@hyl320/ai-edge",
+  "version": "3.0.0",
+  "description": "Feasibility gate, capability boundary, and delivery link triage skill for AI agents.",
+  "license": "MIT",
+  "author": "hyl320",
+  "bin": {
+    "ai_edge": "cli.js",
+    "ai-edge": "cli.js"
+  },
+  "files": [
+    "cli.js",
+    "SKILL.md",
+    "references"
+  ],
+  "keywords": [
+    "agent-skill",
+    "feasibility",
+    "boundary-check",
+    "triage",
+    "reverse-engineering",
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "cline",
+    "codex"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyl320/AI_Edge.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
